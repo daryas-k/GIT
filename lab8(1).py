@@ -1,22 +1,22 @@
-import numpy
+from array import *
+import numpy as np
 import random
 n=int(input('Введить N'))
 b=int(input('Введить b'))
 m=int(input('Введить кількість цифр'))
-list2 = []
+masiv1 = array('i',[])
 s=0
 while s<m:
     s1=s+1
     c = int(input('Введить число'))
-    list2.append(c)
+    masiv1=np.append(masiv1,c)
     s=s+1
-list1 = []
+masiv = array('i',[])
 i=0
 while i<n:
     x = random.randint(0, b)
-    list1.append(x)
+    masiv=np.append(masiv,x)
     i = i+1
-masiv = numpy.array(list1)
-masiv2 = numpy.append(masiv, list2)
+masiv2 = np.append(masiv, masiv1)
 masiv2.sort()
 print(masiv2)
