@@ -1,17 +1,17 @@
 import math
 a = int(input('Задайте a'))
 b = int(input('Задайте b'))
-h = int(input('Задайте h'))
+c = int(input('Задайте c'))
 x = a
 s2 = []
 
 
-while b >= x >=a:
+while b >= x:
     f = 1 / (math.pow(x, 2) + 1) + math.pow(x, 2)
     s = [f,x]
     print('x=',s[1], 'f(x)=',s[0])
-    x=x+h
+    x=x+c
     s2.append(s)
 
-#s2.sort()
+
 print('Найбільше значення функції', max(s2))
