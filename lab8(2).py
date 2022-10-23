@@ -11,5 +11,3 @@ while i<b:
 if len(masiv)==12:
     b = masiv.reshape(3, 4)
     print(b)
-else:
-    print('Eror')
